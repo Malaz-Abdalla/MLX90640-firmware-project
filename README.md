@@ -57,3 +57,38 @@ cd esp32-thermal-mqtt
 - ```Adafruit MLX90640```
 - ```WiFi.h```
 - ```PubSubClient.h```
+
+### Configure Wi-Fi & MQTT
+Edit ```config.h```:
+```cpp
+#define WIFI_SSID     "YourWiFi"
+#define WIFI_PASSWORD "YourPassword"
+
+#define MQTT_SERVER   "broker.hivemq.com"
+#define MQTT_PORT     1883
+#define MQTT_TOPIC    "esp32/thermal"
+
+```
+
+### Upload Code 
+-Connect ESP32 via USB
+-Select the correct COM port in Arduino IDE
+-Upload ```main.ino```
+
+### Data Flow
+- 1.MLX90640_camera captures thermal data (I²C).
+
+- 2.analysis processes raw temperature values.
+
+- 3.Results sent over Wifi_MQTT to an MQTT broker.
+
+- 4.Debug messages sent via Serial0 / Serial.
+
+### Future Improvements
+- Add MQTT subscribe feature for configuration
+
+- Detect multiple faces
+
+- Improve detection algorithm to detect face average with the presence of eye glasses 
+
+- Support OTA (Over-the-Air updates)
