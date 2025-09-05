@@ -40,3 +40,20 @@ The ESP32 captures thermal data, processes it, and publishes results via MQTT fo
 └── README.md # Project documentation
 
 ---
+
+---
+
+## Getting Started
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/yourusername/esp32-thermal-mqtt.git
+cd esp32-thermal-mqtt
+```
+### 2. Open in Arduino IDE
+- Open ```main.ino``` in Arduino IDE (or PlatformIO).
+- Select ESP32 board under Tools > Board.
+- Install required libraries:
+- ```Adafruit MLX90640```
+- ```WiFi.h```
+- ```PubSubClient.h```
