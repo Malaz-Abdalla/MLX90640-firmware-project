@@ -26,12 +26,19 @@ The ESP32 captures thermal data, processes it, and publishes results via MQTT fo
 
 ## Project Structure 
 ├── main.ino # Main entry point
+
 ├── config.h # Configuration (Wi-Fi, MQTT, offsets, etc.)
+
 ├── MLX90640_camera.cpp/h # Thermal camera driver & interface
+
 ├── Wifi_MQTT.cpp/h # Wi-Fi connection & MQTT publish
+
 ├── analysis.cpp/h # Temperature data analysis
+
 ├── SYSTEM_MONITOR.cpp/h # System health monitoring
+
 ├── utils.cpp/h # Helper functions
+
 └── README.md # Project documentation
 
 ---
