@@ -35,8 +35,6 @@ The ESP32 captures thermal data, processes it, and publishes results via MQTT fo
 
 ├── analysis.cpp/h # Temperature data analysis
 
-├── SYSTEM_MONITOR.cpp/h # System health monitoring
-
 ├── utils.cpp/h # Helper functions
 
 └── README.md # Project documentation
